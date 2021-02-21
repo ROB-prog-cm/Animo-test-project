@@ -1,0 +1,40 @@
+.wrapper {
+  width: 310px;
+  height: 310px;
+  box-shadow: 0 0 5px rgba(35, 35, 35, 0.25);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px 10px;
+}
+
+.photoClinic {
+  display: flex;
+}
+
+.clinicBlog {
+  width: 270px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.clinicBlogText {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #042D48;
+}
+
+.clinicText {
+  font-size: 15px;
+  margin: 14px 0;
+  color: #919599;
+}
+
