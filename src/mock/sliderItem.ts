@@ -1,51 +1,64 @@
 import styles from '@pages/styles.module.scss';
-import SliderItem from '@components/element';
-import React from 'react';
+import photo4 from '@assets/images/lime.jpg';
+import photo1 from '@assets/images/photo.jpg';
+import photo3 from '@assets/images/Frame 1.svg';
+import photo2 from '@assets/images/Vector 5.svg';
 
-export const sliderItem = [
+export const sliderItems = [
   {
+    src: photo1,
     doctor: 'Хирург',
     disease: 'Грыжи',
     disease2: 'Аппендицит',
+    wrapperColor: styles.color1,
   },
   {
+    src: photo2,
     doctor: 'Хирург',
     disease: 'Грыжи',
     disease2: 'Аппендицит',
+    wrapperColor: styles.color2,
   },
   {
+    src: photo3,
     doctor: 'Хирург',
     disease: 'Грыжи',
     disease2: 'Аппендицит',
+    wrapperColor: styles.color3,
   },
   {
+    src: photo4,
     doctor: 'Хирург',
     disease: 'Грыжи',
     disease2: 'Аппендицит',
+    wrapperColor: styles.color4,
   },
   {
+    src: photo2,
     doctor: 'Хирург',
     disease: 'Грыжи',
     disease2: 'Аппендицит',
+    wrapperColor: styles.color2,
   },
   {
-    doctor: 'Педиатр',
-    disease: 'Вздутие',
-    disease2: 'Боли в животе',
+    src: photo4,
+    doctor: 'Хирург',
+    disease: 'Грыжи',
+    disease2: 'Аппендицит',
+    wrapperColor: styles.color4,
   },
   {
-    doctor: 'Педиатр',
-    disease: 'Вздутие',
-    disease2: 'Боли в животе',
+    src: photo3,
+    doctor: 'Хирург',
+    disease: 'Грыжи',
+    disease2: 'Аппендицит',
+    wrapperColor: styles.color3,
   },
   {
-    doctor: 'Педиатр',
-    disease: 'Вздутие',
-    disease2: 'Боли в животе',
-  },
-  {
-    doctor: 'Педиатр',
-    disease: 'Вздутие',
-    disease2: 'Боли в животе',
+    src: photo1,
+    doctor: 'Хирург',
+    disease: 'Грыжи',
+    disease2: 'Аппендицит',
+    wrapperColor: styles.color1,
   },
 ];

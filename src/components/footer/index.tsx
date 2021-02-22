@@ -1,14 +1,8 @@
-import { Link } from 'gatsby';
 import * as React from 'react';
 import styles from './styles.module.scss';
 import age from '@assets/images/age.svg';
-import Slider from '@components/element';
-import Clinica from '@components/clinic';
-interface IProps {
-  siteTitle: string;
-}
 
-const Footer = ({}: IProps) => (
+const Footer = ({}) => (
   <footer className={styles.wrapper}>
     <div className={styles.nav}>
       <a className={styles.navLink} href="#">

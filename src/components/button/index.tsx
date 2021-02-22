@@ -2,10 +2,6 @@ import { Link } from 'gatsby';
 import * as React from 'react';
 import styles from './styles.module.scss';
 
-interface IProps {
-  siteTitle: string;
-}
-
 const Button = ({ textButton, to }) => {
   return (
     <div className={styles.wrapper}>

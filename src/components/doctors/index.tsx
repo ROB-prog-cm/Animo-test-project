@@ -2,10 +2,6 @@ import * as React from 'react';
 import styles from './styles.module.scss';
 import cx from 'clsx';
 
-interface IProps {
-  siteTitle: string;
-}
-
 const Doctor = ({ profession, text, photo, number, color, DoctorConfig }) => {
   return (
     <div className={styles.wrapper}>

@@ -1,17 +1,11 @@
-import { Link } from 'gatsby';
 import * as React from 'react';
 import styles from './styles.module.scss';
 import logo2 from '@assets/images/Group 222.svg';
 import logo from '@assets/images/main-logo.svg';
 import question from '@assets/images/button.svg';
 import map from '@assets/images/map.svg';
-import Button from '@components/button';
 
-interface IProps {
-  siteTitle: string;
-}
-
-const Header = ({ siteTitle }: IProps) => {
+const Header = ({}) => {
   return (
     <div>
       <header className={styles.wrapper}>

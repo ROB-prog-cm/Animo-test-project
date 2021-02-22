@@ -2,10 +2,6 @@ import * as React from 'react';
 import styles from './styles.module.scss';
 import cx from 'clsx';
 
-interface IProps {
-  siteTitle: string;
-}
-
 const SliderItem = ({ disease, doctor, disease2, src, wrapperColor }) => {
   return (
     <div className={styles.wrap}>
@@ -16,7 +12,7 @@ const SliderItem = ({ disease, doctor, disease2, src, wrapperColor }) => {
           <span className={styles.sliderText}>{disease2}</span>
         </div>
         <div className={styles.sliderPhoto}>
-          <img src={src} alt="" />
+          <img src={src} alt="1" />
         </div>
       </div>
     </div>
