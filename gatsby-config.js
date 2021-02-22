@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `React Effector Form`,
-    description: `React Effector Form`,
-    author: `@gtosss`,
+    title: `Test task for Animo`,
+    description: `Test task for Animo`,
+    author: `ROB-prog-cm`,
   },
   plugins: [
-    "gatsby-plugin-root-import",
+    'gatsby-plugin-root-import',
     {
       resolve: `gatsby-plugin-sass`,
     },
@@ -37,4 +37,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
