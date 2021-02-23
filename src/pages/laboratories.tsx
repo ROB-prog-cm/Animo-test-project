@@ -2,13 +2,12 @@ import React, { memo } from 'react';
 import styles from './styles.module.scss';
 import Header from '@components/header';
 import Footer from '@components/footer';
-import Clinica from '@components/clinic';
 import logo from '@assets/images/Group 222.svg';
 import Carousel from 'react-multi-carousel';
 import SliderItem from '@components/sliderItem';
 import Navigation from '@components/navigation';
-import { clinics } from '../mock/clinics';
 import { sliderItems } from '../mock/sliderItem';
+import ClinicList from '@components/clinicList';
 
 type Props = {};
 const responsive = {
@@ -45,19 +44,7 @@ const SimpleForm: React.FC<Props> = ({}) => {
         </div>
       </div>
       <Navigation />
-      <div className={styles.wrapper}>
-        {clinics.map(el => {
-          return (
-            <Clinica
-              hiddenStars={el.hiddenStar}
-              rating={el.rating}
-              photo={el.photo}
-              blogText={el.blogText}
-              clinicText={el.clinicText}
-            />
-          );
-        })}
-      </div>
+      <ClinicList />
       <Footer />
     </div>
   );

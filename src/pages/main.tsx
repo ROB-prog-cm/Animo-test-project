@@ -1,16 +1,17 @@
-import React, { memo } from 'react';
+import React, { memo, useState } from 'react';
 import styles from './styles.module.scss';
 import Header from '@components/header';
 import Footer from '@components/footer';
+import Content from '@components/content';
 import logo from '@assets/images/Group 222.svg';
 import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import SliderItem from '@components/sliderItem';
-import Navigation from '@components/navigation';
+import NavigationTabs from '@components/navigationTabs';
 import { sliderItems } from '../mock/sliderItem';
 import ClinicList from '@components/clinicList';
 
 type Props = {};
-
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -19,6 +20,10 @@ const responsive = {
 };
 
 const SimpleForm: React.FC<Props> = ({}) => {
+  const [activeTab, setActiveTab] = useState<
+    'specializations' | 'clinics' | 'laboratories'
+  >('specializations');
+
   return (
     <div className={styles.container}>
       <Header />
@@ -44,8 +49,10 @@ const SimpleForm: React.FC<Props> = ({}) => {
           один клик
         </div>
       </div>
-      <Navigation />
-      <ClinicList />
+      <NavigationTabs activeTab={activeTab} onChange={setActiveTab} />
+      {activeTab === 'specializations' ? <Content /> : null}
+      {activeTab === 'clinics' ? <ClinicList /> : null}
+      {activeTab === 'laboratories' ? <ClinicList /> : null}
       <Footer />
     </div>
   );
